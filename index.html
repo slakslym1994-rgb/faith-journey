@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="af">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eaf4ff">
+  <meta name="description" content="Faith Journey – groei nader aan Jesus met daaglikse oordenkings, Bybelstudie en gebed.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Faith Journey – My Walk with Jesus</title>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Faith Journey tuis">
+      <span class="brand-mark">✝</span>
+      <span><strong>Faith Journey</strong><small>My Walk with Jesus</small></span>
+    </a>
+    <button id="installBtn" class="install-btn" hidden>Installeer app</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">JOU DAAGLIKSE GELOOFSREIS</p>
+        <h1>Groei nader aan Jesus.</h1>
+        <p>Een dag op 'n slag. Maak tyd vir God se Woord, gebed en 'n lewe wat Jesus weerspieël.</p>
+        <div class="hero-actions">
+          <button class="primary" data-go="today">Begin vandag</button>
+          <span class="verse-ref">Johannes 15:4–5</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div><div class="cross">✝</div>
+        <div class="hill hill-one"></div><div class="hill hill-two"></div>
+      </div>
+    </section>
+
+    <nav class="tabs" aria-label="Hoofnavigasie">
+      <button class="tab active" data-tab="today">Vandag</button>
+      <button class="tab" data-tab="bible">Bybelstudie</button>
+      <button class="tab" data-tab="prayer">Gebed</button>
+      <button class="tab" data-tab="journal">Joernaal</button>
+      <button class="tab" data-tab="growth">Groei</button>
+    </nav>
+
+    <section id="today" class="page active">
+      <div class="section-heading">
+        <div><p class="eyebrow">DAAGLIKSE OORDENKING</p><h2 id="dayTitle">Bly naby aan Jesus</h2></div>
+        <span class="pill" id="dayCounter">Dag 1 van 7</span>
+      </div>
+      <article class="feature-card">
+        <div class="feature-top"><span class="scripture-icon">✦</span><span>Vandag se Skriflesing</span></div>
+        <h3 id="dayReference">Johannes 15:1–8</h3>
+        <p id="daySummary">Lees die gedeelte in jou eie Afrikaans 2020-Bybel. Let op hoe Jesus die beeld van die wingerdstok gebruik om te verduidelik hoe belangrik dit is om in Hom te bly.</p>
+        <div class="callout"><strong>Dink hieroor na</strong><p id="dayQuestion">Wat beteken dit vir jou om elke dag in Jesus te bly?</p></div>
+      </article>
+      <div class="two-col">
+        <article class="card">
+          <p class="eyebrow">VANDAG SE GEDAGTE</p>
+          <h3>Geloof is 'n verhouding</h3>
+          <p>Om Jesus te volg, gaan nie net oor kennis of gewoontes nie. Dit gaan daaroor om Hom te leer ken, op Hom te vertrou en sy liefde in jou daaglikse lewe uit te leef.</p>
+          <p class="muted small">Lees die Skrifgedeelte self en vra: Wat leer dit my oor Jesus?</p>
+        </article>
+        <article class="card challenge-card">
+          <p class="eyebrow">PRAKTIESE UITDAGING</p>
+          <h3>Doen vandag een ding</h3>
+          <p id="dayChallenge">Neem vyf rustige minute om met God te praat en vertel Hom wat op jou hart is.</p>
+        </article>
+      </div>
+      <article class="card">
+        <div class="section-heading compact"><div><p class="eyebrow">DAAGLIKSE GEWOONTES</p><h3>My tyd saam met God</h3></div><span id="habitCount" class="pill">0 / 5</span></div>
+        <div class="progress"><span id="habitProgress"></span></div>
+        <div id="habits" class="check-list"></div>
+        <div class="card-footer"><button id="resetHabits" class="text-btn">Herstel vandag se lys</button><span class="muted small">Jou vordering word op hierdie toestel gestoor.</span></div>
+      </article>
+      <div class="button-row"><button id="prevDay" class="secondary">← Vorige dag</button><button id="nextDay" class="primary">Volgende dag →</button></div>
+    </section>
+
+    <section id="bible" class="page">
+      <div class="section-heading"><div><p class="eyebrow">LEER JESUS BETER KEN</p><h2>Bybelstudie</h2></div><span class="pill">Afrikaans 2020</span></div>
+      <p class="intro">Hierdie leesplanne gee Skrifverwysings en studieriglyne. Maak jou Afrikaans 2020-Bybel oop om die volledige teks te lees.</p>
+      <div class="study-grid">
+        <article class="study-card"><span>01</span><h3>Die lewe van Jesus</h3><p>Leer meer oor Jesus se geboorte, bediening, wonderwerke, kruisiging en opstanding.</p><strong>Matteus · Markus · Lukas · Johannes</strong></article>
+        <article class="study-card"><span>02</span><h3>Jesus se leringe</h3><p>Ontdek hoe Jesus ons leer om God en ons naaste lief te hê.</p><strong>Matteus 5–7</strong></article>
+        <article class="study-card"><span>03</span><h3>Gebed en vertroue</h3><p>Leer om eerlik met God te praat en op Hom te vertrou.</p><strong>Matteus 6:5–15 · Filippense 4:4–9</strong></article>
+        <article class="study-card"><span>04</span><h3>Die eerste dissipels</h3><p>Leer uit die lewens van mense wat Jesus gevolg het.</p><strong>Johannes 1 · Handelinge 1–4</strong></article>
+      </div>
+      <article class="card">
+        <p class="eyebrow">BYBELKENNIS-KWIS</p><h3 id="quizQuestion">Wat het Jesus die grootste gebod genoem?</h3>
+        <div id="quizOptions" class="quiz-options"></div>
+        <p id="quizFeedback" class="feedback" aria-live="polite"></p>
+        <button id="nextQuiz" class="primary" disabled>Volgende vraag</button>
+      </article>
+    </section>
+
+    <section id="prayer" class="page">
+      <div class="section-heading"><div><p class="eyebrow">PRAAT MET GOD</p><h2>My gebedsruimte</h2></div><span class="pill">Privaat op jou toestel</span></div>
+      <article class="card prayer-prompt">
+        <span class="big-cross">✝</span><h3>Jy kan eerlik met God praat.</h3>
+        <p>Gebed hoef nie ingewikkeld te wees nie. Dank God, vertel Hom wat jou bekommer, vra vir wysheid en bid vir ander mense.</p>
+        <p class="muted small">Lees ook Matteus 6:5–15 en Filippense 4:6–7.</p>
+      </article>
+      <article class="card">
+        <label for="prayerText" class="field-label">My gebed</label>
+        <textarea id="prayerText" rows="7" placeholder="Liewe Hemelse Vader..."></textarea>
+        <div class="button-row"><button id="savePrayer" class="primary">Stoor gebed</button><button id="clearPrayer" class="secondary">Maak skoon</button></div>
+        <p id="prayerStatus" class="feedback" aria-live="polite"></p>
+      </article>
+      <article class="card"><h3>Gebedsonderwerpe</h3><div class="tag-list"><span>Dankbaarheid</span><span>Familie en vriende</span><span>Wysheid</span><span>Vergifnis</span><span>Vrede</span><span>Groei in geloof</span></div></article>
+      <article class="card"><h3>Gebede wat ek wil onthou</h3><div id="savedPrayers" class="saved-list"><p class="muted">Jou gestoorde gebede sal hier verskyn.</p></div></article>
+    </section>
+
+    <section id="journal" class="page">
+      <div class="section-heading"><div><p class="eyebrow">REFLEKTEER EN GROEI</p><h2>My geloofsjoernaal</h2></div><span class="pill">Slegs op hierdie toestel</span></div>
+      <article class="card">
+        <p class="intro">Skryf neer wat jy leer, waarvoor jy dankbaar is en hoe jy Jesus se voorbeeld kan volg.</p>
+        <label for="journalTitle" class="field-label">Opskrif</label><input id="journalTitle" type="text" placeholder="Byvoorbeeld: Wat ek vandag geleer het">
+        <label for="journalText" class="field-label">My refleksie</label><textarea id="journalText" rows="8" placeholder="Vandag het ek geleer..."></textarea>
+        <button id="saveJournal" class="primary">Stoor joernaalinskrywing</button><p id="journalStatus" class="feedback" aria-live="polite"></p>
+      </article>
+      <article class="card"><h3>My vorige inskrywings</h3><div id="journalEntries" class="saved-list"><p class="muted">Nog geen inskrywings nie.</p></div></article>
+    </section>
+
+    <section id="growth" class="page">
+      <div class="section-heading"><div><p class="eyebrow">STAP VIR STAP</p><h2>My geestelike groei</h2></div></div>
+      <article class="card">
+        <h3>Die vrug van die Gees</h3><p class="muted small">Galasiërs 5:22–23</p>
+        <div class="fruit-grid"><span>Liefde</span><span>Vreugde</span><span>Vrede</span><span>Geduld</span><span>Vriendelikheid</span><span>Goedhartigheid</span><span>Getrouheid</span><span>Sagmoedigheid</span><span self>Selfbeheersing</span></div>
+      </article>
+      <article class="card">
+        <h3>My persoonlike geloofsdoelwit</h3>
+        <p class="muted">Kies een klein, praktiese stap wat jou kan help om nader aan Jesus te groei.</p>
+        <textarea id="goalText" rows="4" placeholder="Ek wil hierdie week..."></textarea><button id="saveGoal" class="primary">Stoor my doelwit</button><p id="goalStatus" class="feedback"></p>
+      </article>
+      <article class="card">
+        <h3>Sewe dae om nader aan Jesus te groei</h3>
+        <ol class="challenge-list">
+          <li>Lees Johannes 15:1–8 en dink oor jou verhouding met Jesus.</li>
+          <li>Lees Romeine 8:31–39 en onthou God se liefde.</li>
+          <li>Lees Hebreërs 11:1–6 en dink oor vertroue.</li>
+          <li>Lees Efesiërs 4:25–32 en oefen vergifnis.</li>
+          <li>Lees Filippense 4:4–9 en bid oor jou bekommernisse.</li>
+          <li>Lees Matteus 5:1–12 en kies een lering om uit te leef.</li>
+          <li>Lees 1 Korintiërs 13 en wys iemand praktiese liefde.</li>
+        </ol>
+      </article>
+      <article class="card"><h3>Jou geloofsreis</h3><p>Geestelike groei gaan nie oor perfeksie of om jouself met ander te vergelyk nie. Dit gaan daaroor om Jesus te leer ken en dag vir dag op Hom te vertrou.</p></article>
+    </section>
+  </main>
+
+  <footer><div class="footer-cross">✝</div><strong>Faith Journey</strong><p>Groei in Christus, een dag op 'n slag.</p><small>Hierdie toepassing vervang nie jou Bybel, jou kerk of persoonlike gesprek met 'n vertroude geestelike leier nie.</small></footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
